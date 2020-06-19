@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<resources>
+
+    <string name="app_name">outpass</string>
+
+
+    -
+    <string-array name="branch_array">
+
+        <item>CSE</item>
+
+        <item>IT</item>
+
+        <item>Mechanical</item>
+
+        <item>Civil</item>
+
+        <item>ECE</item>
+
+        <item>EEE</item>
+
+        <item>Chemical</item>
+
+        <item>Biotech</item>
+
+    </string-array>
+
+</resources>
