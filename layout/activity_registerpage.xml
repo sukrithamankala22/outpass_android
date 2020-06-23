@@ -41,4 +41,12 @@
 
     <TextView android:layout_height="wrap_content" android:layout_width="150dp" app:layout_constraintVertical_bias="0.226" app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.093" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/textView2" android:textColor="#d11336" android:layout_marginTop="43dp" android:text="Password must have * atleast 8 characters * 1 uppercase letter * 1 special character" app:layout_constraintTop_toBottomOf="@+id/password2" android:layout_marginBottom="56dp"/>
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="67dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/cbitlogo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

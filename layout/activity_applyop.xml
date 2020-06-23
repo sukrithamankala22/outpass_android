@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg1"
-    android:fontFamily="sans-serif-smallcaps"
-    tools:context=".MainActivity">
+    tools:context=".applyop">
 
     <TextView
         android:id="@+id/applyforoutpass"
@@ -27,13 +26,9 @@
 
     <TextView
         android:id="@+id/date"
-        android:layout_width="200dp"
+        android:layout_width="110dp"
         android:layout_height="33dp"
         android:layout_marginStart="54dp"
-        android:layout_marginLeft="54dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="168dp"
-        android:layout_marginRight="165dp"
         android:backgroundTint="#ffffff"
         android:ems="10"
         android:fontFamily="sans-serif-smallcaps"
@@ -42,20 +37,21 @@
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
         android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/applyforoutpass" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376"
+        android:layout_marginLeft="54dp" />
 
     <EditText
         android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="54dp"
-        android:layout_marginLeft="54dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="159dp"
-        android:layout_marginRight="159dp"
         android:backgroundTint="#ffffff"
         android:ems="10"
         android:fontFamily="sans-serif-smallcaps"
@@ -66,17 +62,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="159dp" />
 
     <EditText
         android:id="@+id/reason"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="54dp"
-        android:layout_marginLeft="54dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="159dp"
-        android:layout_marginRight="159dp"
         android:backgroundTint="#ffffff"
         android:ems="10"
         android:fontFamily="sans-serif-smallcaps"
@@ -87,25 +83,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/time" />
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="159dp" />
 
     <CheckBox
         android:id="@+id/checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="250dp"
-        android:layout_marginRight="250dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Parent/Guardian"
 
         android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/upload"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reason" />
+        app:layout_constraintTop_toBottomOf="@+id/reason"
+        app:layout_constraintVertical_bias="0.056"
+        android:layout_marginRight="250dp"
+        android:layout_marginLeft="67dp" />
 
     <Button
         android:id="@+id/applybutton"
@@ -128,19 +129,17 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="409dp"
-        android:layout_height="205dp"
+        android:layout_height="150dp"
         android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="112dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="1dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/applybutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkbox">
+        app:layout_constraintTop_toBottomOf="@+id/checkbox"
+        app:layout_constraintVertical_bias="0.828">
 
         <ImageView
             android:id="@+id/image_view"
@@ -154,29 +153,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
         android:layout_marginTop="22dp"
         android:background="#F1F187"
-        android:fontFamily="sans-serif-smallcaps"
+        android:fontFamily="@font/boogaloo"
         android:text="Upload image here"
         android:textColor="#070707"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
+        app:layout_constraintVertical_bias="0.617"
+        android:layout_marginLeft="17dp" />
 
     <CalendarView
         android:id="@+id/calendarView2"
-        android:layout_width="144dp"
-        android:layout_height="306dp"
+        android:layout_width="244dp"
+        android:layout_height="300dp"
+        android:theme="@style/CalenderViewCustom"
+        android:dateTextAppearance="@style/CalenderViewDateCustomText"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintHorizontal_bias="0.994"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
-
-
+        app:layout_constraintVertical_bias="0.412" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
