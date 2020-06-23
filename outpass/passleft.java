@@ -32,7 +32,7 @@ public class passleft extends AppCompatActivity implements View.OnClickListener{
         }
 
     public void backtodashboardfn() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this,loginactivity.class);
         startActivity(intent);
     }
 }
